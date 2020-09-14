@@ -1,7 +1,8 @@
-import { StatusBar, useState } from "expo-status-bar";
-import React from "react";
+import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
 import {
   StyleSheet,
+  Text,
   TouchableOpacity,
   View,
   Image,
@@ -9,7 +10,8 @@ import {
 } from "react-native";
 
 export default function ProfileScreen() {
-  const [text, setText] = React.useState("");
+  const [text, setText] = useState("");
+
   return (
     <View style={styles.container}>
       <Image
@@ -53,6 +55,6 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 100,
     position: "absolute",
-    top: 150
+    top: 100
   }
 });
